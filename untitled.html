@@ -1,40 +1,47 @@
-Requirements :
-Title
-Headings
-Text 
-Table with images
-Hyperlinks to another website
-Text colour
-
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Basketball </title>
+	<link rel = "stylesheet" href="index_files/style.css">
+	<title> HomePage </title>
+	<script src="index_files/three.min.js"></script>
+	<script src="index_files/vanta.fog.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
-	<h1>Basketball</h4>
-	<h4> Its a ball sport </h1>
+ <div id="vanta">
+ 	<section>
+	<h1> HomePage </h4>
+	<div class = "move">
+		<a href="https://macquarietelecom.com/">
+		<button class="hoverable">
+		Hamish's Debit Card
+		</button>
+		</a>
+	</div>
+	<div class = "move">
+		<a href="https://www.linkedin.com/in/ross-fryer-26199a290/">
+		<button class="hoverable">
+		Mr Fryer's Secrets
+		</button>
+		</a>
+	</div>
+	</section>
 
-	<table border="1" bordercolor="blue">
-		 <tr> 
-		 	<th>Nane</th>
-		 	<th>Image</th>
-		 </tr>
-		 <tr> 
-		 	<th>Afiak</th>
-		 	<th><img src="https://imageio.forbes.com/specials-images/imageserve/6531830aaae52b9426047849/1x1-social-LeBron-James-by-Harry-How-Getty-Images/0x0.jpg?format=jpg&height=1080&width=1459" style="width:200px;height:200px;"></th>
-		 </tr>
-		 <tr> 
-		 	<th>Baller 2</th>
-		 	<th><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQifcd6I3JHCA9qIRq5mT437Kg-gZSpQnaTcA&s" style="width:200px;height:200px;"></th>
-		 </tr>
-	</table>
-
-	<h4 style="color: brown;"> I'm basketball coloured </h4>
-
-
+<canvas class="vanta-canvas" style="display: block; position: absolute; z-index: 0; top: 0px; left: 0px; width: 1440px; height: 732px;" width="2880" height="1464"></canvas></div>
+	
+	<script>
+	VANTA.FOG({
+  	el: "#vanta",
+  	mouseControls: true,
+  	touchControls: true,
+  	gyroControls: false,
+  	minHeight: 200.00,
+  	minWidth: 200.00
+	})
+	</script>
+	<script src="index_files/custom.js"></script>
 </body>
 </html>
